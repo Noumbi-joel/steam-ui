@@ -4,6 +4,7 @@ import { View, Text, StyleSheet } from 'react-native'
 import {LinearGradient} from 'expo-linear-gradient'
 import ToggleComp from '../components/ToggleComp'
 import LoadedComp from '../components/LoadedComp'
+import RightChevronButton from '../components/RightChevronButton'
 
 const Homescreen = () => {
     return (    
@@ -22,7 +23,11 @@ const Homescreen = () => {
             <Text style={{color: "#2fb4f1", fontWeight: "400"}}>the PC client to enter your password and</Text>  
             <Text style={{color: "#2fb4f1", fontWeight: "400"}}>authenticator code less often.</Text>  
          </View>
-         
+         <View style={{marginTop: 10}}>
+            <RightChevronButton title="Remove Authenticator" />
+            <RightChevronButton title="My Recovery Code" />
+            <RightChevronButton title="Help" />
+         </View>
      </LinearGradient>
     )
 }
