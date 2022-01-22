@@ -18,15 +18,15 @@ const ToggleComp = ({titleOne, titleTwo}) => {
 
 const styles = StyleSheet.create({
     container: {
-        alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#1c202c',
-        height: 70
+        height: 70,
+        paddingLeft: 7
     },
     toggleComp: {
         backgroundColor: '#303649',
-        width: 300,
         height: 35,
+        width: 250,
         flexDirection: 'row',
     },
     buttonOne: {

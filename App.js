@@ -2,6 +2,9 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import {NavigationContainer} from "@react-navigation/native"
 
+//colors 
+import colors from "./assets/common/colors"
+
 //navigator
 import {MyTabs} from "./navigation/SteamNavigator"
 
@@ -9,7 +12,7 @@ export default function App() {
 
   const navTheme = {
     colors: {
-      background: 'transparent',
+      background: colors.tabBg
     },
   };
 

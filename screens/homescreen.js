@@ -8,20 +8,20 @@ import RightChevronButton from '../components/RightChevronButton'
 
 const Homescreen = () => {
     return (    
-     <LinearGradient style={styles.container} colors={["rgba(28,32,44,0)", "#1c202c", "#1c202c"]} locations={[0, 0.40, 1]}>
+     <LinearGradient style={styles.container} colors={["#808080", "#1c202c", "#1c202c"]} locations={[0, 0.40, 1]}>
          <ToggleComp titleOne="Steam Guard" titleTwo="Confirmations" />
          <Text style={styles.floutedText}>logged in as LittleJacob</Text>
          <Text style={styles.codeText}>N5KCV</Text>
          <LoadedComp />
          <View style={{alignSelf: 'center', marginTop: 20}}>
-            <Text style={{color: "#d3d3d3", fontWeight: "400"}}>You’ll enter your code each time you enter your</Text>
-            <Text style={{color: "#d3d3d3", fontWeight: "400"}}>password to sign in to your Steam account.</Text>  
+            <Text style={styles.headerText}>You’ll enter your code each time you enter your</Text>
+            <Text style={styles.headerText}>password to sign in to your Steam account.</Text>  
          </View>
          <View style={{alignSelf: 'center', marginTop: 20}}>
-            <Text style={{color: "#2fb4f1", fontWeight: "400"}}>Tip: If you don't share your PC, you can select</Text>
-            <Text style={{color: "#2fb4f1", fontWeight: "400"}}>Remember my password" when you sign in to </Text>  
-            <Text style={{color: "#2fb4f1", fontWeight: "400"}}>the PC client to enter your password and</Text>  
-            <Text style={{color: "#2fb4f1", fontWeight: "400"}}>authenticator code less often.</Text>  
+            <Text style={styles.bodyText}>Tip: If you don't share your PC, you can select</Text>
+            <Text style={styles.bodyText}>Remember my password" when you sign in to </Text>  
+            <Text style={styles.bodyText}>the PC client to enter your password and</Text>  
+            <Text style={styles.bodyText}>authenticator code less often.</Text>  
          </View>
          <View style={{marginTop: 10}}>
             <RightChevronButton title="Remove Authenticator" />
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     },
     floutedText: {
         alignSelf: 'center',
-        color: "#576574",
+        color: "#7b8d9d",
         fontSize: 14,
         fontWeight: "400",
     },
@@ -50,6 +50,14 @@ const styles = StyleSheet.create({
         fontWeight: "400",
         letterSpacing: 5.6,
         alignSelf: "center",
+    },
+    headerText: {
+        color: "#d3d3d3", 
+        fontWeight: "400"
+    },
+    bodyText: {
+        color: "#2fb4f1", 
+        fontWeight: "400"
     }
 })
 

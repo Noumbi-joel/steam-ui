@@ -12,7 +12,7 @@ import ParameterScreen from '../screens/parameterscreen';
 
 import {Ionicons} from "@expo/vector-icons"
 
-import steam from "../assets/images/steam.png"
+import steam from "../assets/images/png/steam.png"
 
 const Tab = createBottomTabNavigator();
 
@@ -45,7 +45,7 @@ export const MyTabs = () => {
           tabBarStyle: {backgroundColor: "#12141c"},
           headerStyle: {backgroundColor: "#1c202c"},
           headerTintColor: "#fff",
-          headerLeft: () => {return <Image source={steam} />}
+          headerLeft: () => {return <Image style={{marginLeft: 10}} source={steam} />}
         })
       }>
         <Tab.Screen name="Home" component={Homescreen} options={{headerTitle: "Steam Safety"}} />
