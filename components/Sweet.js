@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { View, StyleSheet, Image, Text } from 'react-native';
+import { View, StyleSheet, Image, Text, TouchableOpacity } from 'react-native';
 
 //colors
 import colors from "../assets/common/colors"
@@ -14,7 +14,6 @@ import eurogamer_sweet_logo from "../assets/images/png/eurogamer_sweet_logo.png"
 import { Entypo } from '@expo/vector-icons'; 
 import { AntDesign } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
-import { FontAwesome } from '@expo/vector-icons';
 
 const Sweet = () => {
     return (
@@ -49,19 +48,22 @@ const Sweet = () => {
                 <View style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'}}>
                     <View style={{flexDirection: 'row', alignItems: 'center'}}>
                         <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                            
-                            <AntDesign name="like2" size={24} color={colors.green} />
-                            <Text style={{color: colors.green, marginLeft: 2}}>324</Text>
+                            <TouchableOpacity  onPress={() => console.log("like")}>
+                                <AntDesign name="like2" size={24} color={colors.green} />
+                            </TouchableOpacity>
+                            <Text style={{color: colors.green, marginLeft: 5}}>324</Text>
                         </View>
 
                         <View style={{ marginLeft: 10, flexDirection: 'row', alignItems: 'center'}}>
-                            <FontAwesome5 name="comment-alt" size={18} color={colors.transparent} />
-                            <Text style={{color: colors.transparent, marginLeft: 2}}>14</Text>
+                            <TouchableOpacity onPress={() => console.log("some comments")}>
+                                <FontAwesome5 name="comment-alt" size={18} color={colors.transparent} />
+                            </TouchableOpacity>
+                            <Text style={{color: colors.transparent, marginLeft: 5}}>14</Text>
                         </View>
                     </View>
-                    <View>
+                    <TouchableOpacity  onPress={() => console.log("share on social networks")}>
                         <AntDesign name="sharealt" size={24} color={colors.transparent} />
-                    </View>
+                    </TouchableOpacity>
                 </View>
             </View>
         </View>

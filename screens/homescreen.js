@@ -9,7 +9,7 @@ import RightChevronButton from '../components/RightChevronButton'
 const Homescreen = () => {
     return (    
      <LinearGradient style={styles.container} colors={["#808080", "#1c202c", "#1c202c"]} locations={[0, 0.40, 1]}>
-         <ToggleComp titleOne="Steam Guard" titleTwo="Confirmations" />
+         <ToggleComp titleOne="Steam Guard" titleTwo="Confirmations" withBg />
          <Text style={styles.floutedText}>logged in as LittleJacob</Text>
          <Text style={styles.codeText}>N5KCV</Text>
          <LoadedComp />

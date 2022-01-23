@@ -10,9 +10,16 @@ import MessageScreen from '../screens/messagescreen';
 import StoreScreen from '../screens/storescreen';
 import ParameterScreen from '../screens/parameterscreen';
 
+//icons
 import {Ionicons} from "@expo/vector-icons"
 
+//images
 import steam from "../assets/images/png/steam.png"
+
+import CustomHeaderButton from "../components/ui/HeaderButton"
+
+//custom header buttons
+import {HeaderButtons,Item} from "react-navigation-header-buttons";
 
 const Tab = createBottomTabNavigator();
 
@@ -50,7 +57,7 @@ export const MyTabs = () => {
       }>
         <Tab.Screen name="Home" component={Homescreen} options={{headerTitle: "Steam Safety"}} />
         <Tab.Screen name="Profile" component={ProfileScreen} options={{headerTitle: "Steam Community"}} />
-        <Tab.Screen name="Messages" component={MessageScreen} options={{tabBarBadge: "", headerTitle: "Steam Chat", tabBarBadgeStyle: {marginLeft: -2, backgroundColor: "#31bcfc"}}} />
+        <Tab.Screen name="Messages" component={MessageScreen} options={{tabBarBadge: "", headerTitle: "Steam Chat", headerRight:() => (<HeaderButtons HeaderButtonComponent={CustomHeaderButton}><Item title="search" iconName="ios-search" /></HeaderButtons>), tabBarBadgeStyle: {marginLeft: -2, backgroundColor: "#31bcfc"}}} />
         <Tab.Screen name="Store" component={StoreScreen} options={{headerTitle: "Steam Store"}}/>
         <Tab.Screen name="Settings" component={ParameterScreen} />
       </Tab.Navigator>
