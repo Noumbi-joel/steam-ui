@@ -33,6 +33,7 @@ const ProfileScreen = () => {
             </View>
             <ScrollView>
                 <Sweet />
+                <Sweet />
             </ScrollView>
         </View>
     )

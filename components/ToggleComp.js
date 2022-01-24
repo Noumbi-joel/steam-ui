@@ -12,7 +12,7 @@ const ToggleComp = ({titleOne, titleTwo, withBg}) => {
                     <Text style={styles.textColor}>{titleOne}</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonTwo}>
-                    <Text style={styles.textColor}>{titleTwo}</Text>
+                    <Text style={[styles.textColor, {color: colors.transparent}]}>{titleTwo}</Text>
                 </TouchableOpacity>
             </View>
         </View>

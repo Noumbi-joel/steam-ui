@@ -6,5 +6,5 @@ export default {
    lightBlack: "#202532",
    green: "#00d44b",
    blue: "#31bcfc",
-   horizontalBtnColor: "#303649"
+   horizontalBtnColor: "#303649",
 }

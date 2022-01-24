@@ -75,7 +75,8 @@ const styles = StyleSheet.create({
         height: 460,
         backgroundColor: colors.lightBlack,
         marginVertical: 20,
-        padding: 10
+        padding: 10,
+        borderTopWidth: 10,
     },
     tweetHeader: {
         flexDirection: "row",

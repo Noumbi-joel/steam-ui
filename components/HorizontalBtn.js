@@ -22,7 +22,6 @@ const HorizontalBtn = ({title, hasIcon, size}) => {
 const styles = StyleSheet.create({
     buttonContainer: {
         backgroundColor: colors.horizontalBtnColor,
-        marginTop: 20,
         height: 40,
         marginLeft: 10,
         borderRadius: 10,
